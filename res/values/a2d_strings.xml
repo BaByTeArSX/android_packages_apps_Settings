@@ -18,7 +18,7 @@
  	
     <!-- About phone screen, A2D-MY version -->
     <string name="a2d_version">A2D-MY version</string>
-    <string name="a2d_version_default">BETA</string>
+    <string name="a2d_version_default">BETA-RELEASE</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
