@@ -91,49 +91,57 @@
                 android:icon="@drawable/ic_settings_interface"
                 />
 
-	<!-- Clock & date -->
+		<!-- Clock & date -->
         <dashboard-tile
                 android:id="@+id/status_bar_clock_settings"
                 android:title="@string/status_bar_clock_title"
                 android:fragment="com.android.settings.slim.StatusBarClockStyle"
                 android:icon="@drawable/ic_settings_date_time"
-		/>
+				/>
 
      	<!-- Network & traffic -->
-	<dashboard-tile
-		android:id="@+id/a2d_network_settings"
-		android:title="@string/network_traffic_title"
-		android:fragment="com.android.settings.a2d.NetworkTraffic"
-		android:icon="@drawable/ic_tab_unselected_download"
-		/>
+		<dashboard-tile
+				android:id="@+id/a2d_network_settings"
+				android:title="@string/network_traffic_title"
+				android:fragment="com.android.settings.a2d.NetworkTraffic"
+				android:icon="@drawable/ic_tab_unselected_download"
+				/>
 
-	<!-- Wakelock blocker -->
-	<dashboard-tile
-		android:id="@+id/wakelock_blocker"
-		android:title="@string/wakelock_blocker"
-		android:fragment="com.android.settings.WakeLockBlocker"
-		android:icon="@drawable/ic_settings_notifications"
-	 	/>
+		<!-- Wakelock blocker -->
+		<dashboard-tile
+				android:id="@+id/wakelock_blocker"
+				android:title="@string/wakelock_blocker"
+				android:fragment="com.android.settings.WakeLockBlocker"
+				android:icon="@drawable/ic_settings_notifications"
+	 			/>
 
-	<!-- App Circle Bar -->
-	<dashboard-tile
-		android:id="@+id/a2d_app_circle_bar"
-		android:title="@string/app_circle_bar_title"
-		android:fragment="com.android.settings.a2d.AppCircleBar"
-		android:icon="@drawable/ic_settings_interface"
-		/>
+		<!-- App Circle Bar -->
+		<dashboard-tile
+				android:id="@+id/a2d_app_circle_bar"
+				android:title="@string/app_circle_bar_title"
+				android:fragment="com.android.settings.a2d.AppCircleBar"
+				android:icon="@drawable/ic_settings_interface"
+				/>
 
-	<!-- Viper4Android -->
- 	<dashboard-tile
- 		android:id="@+id/viper_settings"
- 		android:icon="@drawable/ic_settings_viper"
- 		android:title="@string/viper_title">
- 		<intent
- 		    android:action="android.intent.action.MAIN"
- 		    android:targetPackage="com.vipercn.viper4android_v2"
- 		    android:targetClass="com.vipercn.viper4android_v2.activity.ViPER4Android" />
- 	</dashboard-tile>
+		<!-- Viper4Android -->
+ 		<dashboard-tile
+ 				android:id="@+id/viper_settings"
+ 				android:icon="@drawable/ic_settings_viper"
+ 				android:title="@string/viper_title">
+ 				<intent
+ 		    		android:action="android.intent.action.MAIN"
+ 		    		android:targetPackage="com.vipercn.viper4android_v2"
+ 		    		android:targetClass="com.vipercn.viper4android_v2.activity.ViPER4Android" />
+ 		</dashboard-tile>
 	 	
+        <!-- Notification Drawer -->
+        <dashboard-tile
+                android:id="@+id/notification_drawer_settings"
+                android:title="@string/notification_drawer_title"
+                android:fragment="com.android.settings.cyanogenmod.NotificationDrawerSettings"
+                android:icon="@drawable/ic_settings_notification_drawer"
+                />
+
     </dashboard-category>
 
     <!-- DEVICE -->
